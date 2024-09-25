@@ -202,11 +202,12 @@
             justify-content: center;
             text-align: center;
             color: var(--white);
-            padding: 100px 20px;
+            padding: 10vw 5vw;
             position: relative;
             overflow: hidden;
-        }
-        .hero::before {
+          }
+          
+          .hero::before {
             content: "";
             position: absolute;
             top: 0;
@@ -216,25 +217,26 @@
             background-image: url('./image/DAVV main gate.png');
             background-size: cover;
             background-position: center;
-            filter: blur(3px); /* Adjusted blur to 3px */
+            filter: blur(3px);
             z-index: -1;
-        }
-        
-        .hero-content h2 {
-            font-size: 6m; /* Increased font size */
+            object-fit: cover;
+          }
+          
+          .hero-content h2 {
+            font-size: 6vw;
             margin-bottom: 20px;
-            font-weight: 400; /* Slightly bolder for emphasis */
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adding shadow for readability */
-            line-height: 1.2; /* Adjusted line-height for spacing */
-        }
-        
-        .hero-content p {
-            font-size: 2.03em; /* Increased font size */
-            max-width: 700px; /* Expanded for balance */
+            font-weight: 400;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            line-height: 1.2;
+          }
+          
+          .hero-content p {
+            font-size: 2.03em;
+            max-width: 700px;
             margin: 0 auto 30px;
             font-weight: 300;
-            line-height: 1 
-        }
+            line-height: 1;
+          }
         
         .btn {
             display: inline-block;
@@ -263,7 +265,42 @@
         section {
             margin-bottom: 80px;
         }
+        @media only screen and (max-width: 768px) {
+            .hero-content h2 {
+              font-size: 2vw;
+              width: 80%;
+              height: auto;
+              background-size: 100% auto;
+              padding: 10px 20px;
+              margin: 2px auto;
+            }
+            
+            .hero-content p {
+              font-size: 1em;
+              width: 80%;
+              padding: 10px 20px;
+              margin: 2px auto;
+            }
+          }
+          
+          @media only screen and (max-width: 480px) {
+            .hero-content h2 {
+              font-size: 2vw;
+              width: 90%;
+              height: auto;
+              background-size: 100% auto;
+              padding: 2px 5px;
+              margin: px auto;
+            }
+            .hero-content p {
+              font-size: 1em;
+              width: 90%;
+              padding: 5px 10px;
+              margin: px auto;
+            }
+          }
         
+         
 
     
         
@@ -342,8 +379,8 @@
 
 
         .davv-logo {
-            width: 220px;
-            height: 170px;
+            width: 180px;
+            height: 130px;
             margin-left: 45px;
             margin-right: 65px;
             margin-top: 25px;
@@ -352,13 +389,13 @@
             transition: all 0.3s ease-in-out;
           }
         .davv-logo:hover {
-            width: 230px;
-            height: 180px;
+            width: 200px;
+            height: 140px;
           }
           
         .iips-logo {
-            width: 220px;
-            height: 160px;
+            width: 180px;
+            height: 130px;
             margin-left: 45px;
             margin-right: 65px;
             margin-top: 25px;
@@ -367,8 +404,8 @@
             transition: all 0.3s ease-in-out;
           }
           .iips-logo:hover {
-            width: 230px;
-            height: 180px;
+            width: 200px;
+            height: 140px;
           }
 body {
     font-family: 'Arial', sans-serif;
