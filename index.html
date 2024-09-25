@@ -13,6 +13,9 @@
             <div class="logo">
                 <h1>ICIIPS <span>2024</span></h1>
             </div>
+             <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+            </button>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -37,24 +40,8 @@
     <main class="container">
         <section id="about">
             <h2>About Devi Ahilya Vishwavidyalaya</h2>
-            <p>Devi Ahilya Vishwavidyalaya (DAVV), formerly
-                University of Indore, is a premiere university in
-                Central India, located in the heart of Madhya
-                Pradesh. It is a premier institution of higher
-                learning, renowned for its academic excellence,
-                innovative research, and vibrant campus life. It
-                has completed 60 years of establishment,
-                educational commitment and services. It is the
-                first University of Madhya Pradesh which has
-                been accredited with "A+" grade by NAAC. </p>
-                <p> It is catering to the educational needs on one hand to the most
-                    industrially and infrastructurally developed district of MP, Indore and on
-                    the other hand to the tribal and rural backward districts of the state.</p>
-                <p> DAVV university's unwavering pursuit of knowledge and excellence
-                    continues to inspire and shape the future of countless young minds
-                    through well qualified human resources and value based education. New
-                    horizons and keep moving ahead on the path of excellence, innovation
-                    and enlightenment. </p>
+            <p>Devi Ahilya Vishwavidyalaya (DAVV), also known as Devi Ahilya University, is a prominent public university located in Indore, Madhya Pradesh, India. Established in 1964, the university was initially known as the University of Indore and later renamed in honor of the legendary queen of the Maratha Empire, Devi Ahilya Bai Holkar, known for her contributions to society, art, and architecture. DAVV offers a wide range of undergraduate, postgraduate, diploma, and doctoral programs across disciplines like science, arts, commerce, law, management, engineering, education, and social sciences. The university has numerous academic departments and affiliated colleges that cater to different fields of study, including technology, health sciences, and professional courses.</p>
+                <p> Devi Ahilya Vishwavidyalaya (DAVV), also known as Devi Ahilya University, is a prominent public university located in Indore, Madhya Pradesh, India. Established in 1964, the university was initially known as the University of Indore and later renamed in honor of the legendary queen of the Maratha Empire, Devi Ahilya Bai Holkar, known for her contributions to society, art, and architecture. DAVV offers a wide range of undergraduate, postgraduate, diploma, and doctoral programs across disciplines like science, arts, commerce, law, management, engineering, education, and social sciences. The university has numerous academic departments and affiliated colleges that cater to different fields of study, including technology, health sciences, and professional courses.It has a vibrant student community with cultural events, fests, and extracurricular activities happening throughout the academic year. DAVV has collaborations with national and international institutions, facilitating academic exchange programs, research partnerships, and joint projects. Devi Ahilya University continues to be a leading educational institution in central India, fostering academic excellence and contributing to research and development across multiple fields.</p>
         </section>
         <section id="about">
             <h2>About International Institute of Professional Studies</h2>
@@ -102,6 +89,44 @@
                 strategies for achieving the SDGs. </p>
         </section>
 
+        <section id="themes" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Proposed Themes</h2>
+                <div class="themes-grid">
+                    <div class="theme-card">
+                        <i data-feather="globe" class="theme-icon"></i>
+                        <h3>Integration of Sustainability Across Dimensions</h3>
+                        <ul><li>Integrating Economic, Social, and Environmental Sustainability</li>
+                           <li>Sustainable Consumption and Lifestyle</li>
+                            <li>Product Design and Development for Sustainability</li>
+                           <li>Partnerships and Collaboration Across Sectors</li>
+                          <li>Corporate Governance and Ethical Business practices for SDGs</li></ul>
+                    </div>
+                    <div class="theme-card">
+                        <i data-feather="cpu" class="theme-icon"></i>
+                        <h3>Technological Innovation for Sustainable Development</h3>
+                        <ui>
+                            <li>Technology and Innovation for SDG Acceleration</li>
+                            <li>AI for Sustainable Development</li>
+                            <li>Blockchain for Transparency and Accountability</li>
+                            <li>IoT for Smart Cities</li>
+                            <li>Cybersecurity for Protecting Critical Infrastructure</li>
+                        </ui>
+                    </div>
+                    <div class="theme-card">
+                        <i data-feather="book-open" class="theme-icon"></i>
+                        <h3>Empowering Change through Education and Training for SDGs</h3>
+                    <ul>
+                        <li>Transforming Mindsets for Sustainable Development</li>
+                        <li>Strategies for Achieving the SDGs</li>
+                        <li>Communication Strategies for sustainable development</li>
+                        <li>Education and Capacity Building for SDG Implementation.</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section id="speakers">
             <h2>Keynote Speakers</h2>
             <div class="speakers-grid">
@@ -159,6 +184,21 @@
             var header = document.querySelector('header');
             header.classList.toggle('scrolled', window.scrollY > 0);
         });
+        const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('nav ul');
+
+    navToggle.addEventListener('click', () => {
+        nav.classList.toggle('show'); 
+        navToggle.classList.toggle('active');  
+    });
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        navLinks.forEach(link => link.classList.remove('active'))
+        this.classList.add('active');
+    });
+});
     </script>
-</body>
 </html>
