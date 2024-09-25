@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICIIPS 2024 - International Conference at International Institute of Prehuman Studies</title>
+    <title>
+    </title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -34,10 +35,30 @@
             <img src="./image/60yearsofdavv.jpg" alt="DAVV Logo" class="logo davv-logo">
 
             <img src="./image/iipslogo.jpg" alt="IIPS Logo" class="logo iips-logo">
-            <h1>ICIIPS 2024</h1>
-            <p>International Conference on Innovative Ideas in Professional Studies</p>
+            <h2 style="font-size: 6em; margin-bottom: 10px; font-weight: 700; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); color: white;">
+                ICIIPS <span style="color: var(--accent-color);">2024</span>
+            </h2>
+    
+            <h3 style="font-size: 2.5em; font-weight: 400; margin-bottom: 5px; color: white;">
+                International Conference on Innovative Ideas in Professional Studies
+            </h3>
             <p class="date">September 25-26, 2024</p>
-            <a href="#registration" class="cta-button">Register Now</a>
+            <button 
+    href="#registration" 
+    class="cta-button" 
+    style="
+        background: linear-gradient(to right, #d2691e, #cd853f);color: white;border-radius: 10px;padding: 12px 24px;font-size: 18px; 
+    border: none; 
+        cursor: pointer; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        transition: background 0.3s, transform 0.2s, box-shadow 0.3s;"
+    onmouseover="this.style.background='linear-gradient(to right, #cd853f, #d2691e)'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.3)';" 
+    onmouseout="this.style.background='linear-gradient(to right, #d2691e, #cd853f)'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';">
+    Register Now
+</button>
+
+
+
         </div>
     </section>
     
@@ -162,19 +183,107 @@
 
         <section id="schedule">
             <h2>Conference Schedule</h2>
-            <p>Our comprehensive program features keynote speeches, panel discussions, interactive workshops, and networking events. The detailed schedule will be announced soon, offering a diverse range of sessions covering cutting-edge topics in modern computing.</p>
+            <p>Our comprehensive program features keynote speeches, panel discussions, interactive workshops, and networking events. The detailed schedule is as follows:</p>
+            
+            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                <thead>
+                    <tr style="background-color: #f2f2f2;">
+                        <th style="padding: 10px; border: 1px solid #ddd;">Date</th>
+                        <th style="padding: 10px; border: 1px solid #ddd;">Time</th>
+                        <th style="padding: 10px; border: 1px solid #ddd;">Session</th>
+                        <th style="padding: 10px; border: 1px solid #ddd;">Speaker</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">September 25, 2024</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">9:00 AM - 10:00 AM</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Keynote Address: Future of Computing</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Dr. Jane Smith</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">September 25, 2024</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">10:15 AM - 11:15 AM</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Panel Discussion: AI in Everyday Life</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Panelists: John Doe, Lisa Wong, Dr. Ahmed Khan</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">September 25, 2024</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">11:30 AM - 12:30 PM</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Workshop: Building Web Applications</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Emily Chen</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">September 25, 2024</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">1:30 PM - 2:30 PM</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Interactive Session: Data Science in Action</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Dr. Raj Patel</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">September 25, 2024</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">2:45 PM - 3:45 PM</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Networking Event: Meet the Experts</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">All Speakers</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">September 25, 2024</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">4:00 PM - 5:00 PM</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Closing Remarks & Future Directions</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Dr. Jane Smith</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">September 26, 2024</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">9:00 AM - 10:00 AM</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Keynote Address: Innovations in Tech</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Dr. Sarah Johnson</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">September 26, 2024</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">10:15 AM - 11:15 AM</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Panel Discussion: The Future of Work</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Panelists: Dr. Alan Green, Ms. Lucy White</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-
-        <section id="venue">
-            <h2>Conference Venue</h2>
-            <p>ICIIPS 2024 will be held at the International Institute of Professional Studies, DAVV, INdore. Known for its state-of-the-art facilities, high academic excellence and stunning architecture. Located in the heart of the city, it offers easy access to accommodations, dining, and cultural attractions.</p>
+        
+        <section id="venue" style="text-align: center; padding: 40px 20px;">
+            <h2 style="font-size: 2.5em; margin-bottom: 20px;">Conference Venue</h2>
+            <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto 30px;">
+                ICIIPS 2024 will be held at the International Institute of Professional Studies, DAVV, Indore. Known for its state-of-the-art facilities, high academic excellence, and stunning architecture. Located in the heart of the city, it offers easy access to accommodations, dining, and cultural attractions.
+            </p>
+        
+            <div style="margin-top: 20px;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.8961953148664!2d75.87427391521861!3d22.72349808503449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e92b4d6f6a65%3A0x56c9261b89af94cb!2sInternational%20Institute%20of%20Professional%20Studies%2C%20DAVV!5e0!3m2!1sen!2sin!4v1695406630730!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="450" 
+                    style="border: 0; border-radius: 10px;" 
+                    allowfullscreen=""></iframe>
+            </div>
         </section>
-
-        <section id="registration">
-            <h2>Registration</h2>
-            <p>Secure your place at this landmark event in the world of computing innovation. Early bird registration is now open until January 31, 2024, offering significant savings on conference fees.</p>
-            <a href="#" class="btn">Register Now</a>
+        <section id="registration" style="text-align: center; padding: 40px 20px;">
+            <h2 style="font-size: 2.5em; margin-bottom: 20px; color: #333;">Registration</h2>
+            <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto 30px; color: #555;">
+                Secure your place at this landmark event in the world of computing innovation. 
+                Early bird registration is now open until <strong>January 31, 2024</strong>, 
+                offering significant savings on conference fees.
+            </p>
+            <a href="#registration" class="btn" style="
+                display: inline-block; 
+                background-color: #d2691e; 
+                color: white; 
+                padding: 12px 30px; 
+                text-decoration: none; 
+                border-radius: 5px; 
+                font-size: 1.2em; 
+                transition: background 0.3s, transform 0.2s; 
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                Register Now
+            </a>
         </section>
+        
+        
     </main>
 
         <!-- Footer Section -->

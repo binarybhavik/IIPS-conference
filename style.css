@@ -192,9 +192,8 @@
     color: var(--accent-color);
     font-weight: bold;
         }
-
         .hero {
-            background:  url('/api/placeholder/1920/1080');
+            background: (rgba(12, 35, 64, 0.8), rgba(12, 35, 64, 0.8)), url('/api/placeholder/1920/1080');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -203,7 +202,9 @@
             justify-content: center;
             text-align: center;
             color: var(--white);
-            padding-top: 100px;
+            padding: 100px 20px;
+            position: relative;
+            overflow: hidden;
         }
         .hero::before {
             content: "";
@@ -212,52 +213,67 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('./image/DAVV\ main\ gate.png');
+            background-image: url('./image/DAVV main gate.png');
             background-size: cover;
             background-position: center;
-            filter: blur(5px);
+            filter: blur(3px); /* Adjusted blur to 3px */
             z-index: -1;
-          }
-
-        .hero-content h2 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-            font-weight: 300;
         }
-
+        
+        .hero-content h2 {
+            font-size: 6m; /* Increased font size */
+            margin-bottom: 20px;
+            font-weight: 400; /* Slightly bolder for emphasis */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adding shadow for readability */
+            line-height: 1.2; /* Adjusted line-height for spacing */
+        }
+        
         .hero-content p {
-            font-size: 1.2em;
-            max-width: 600px;
+            font-size: 2.03em; /* Increased font size */
+            max-width: 700px; /* Expanded for balance */
             margin: 0 auto 30px;
             font-weight: 300;
+            line-height: 1.2; /* Increased line-height for better spacing */
         }
-
+        
         .btn {
             display: inline-block;
             background-color: var(--accent-color);
             color: var(--primary-color);
-            padding: 12px 30px;
+            padding: 15px 35px; /* Adjusted for better spacing */
             text-decoration: none;
-            border-radius: 3px;
+            border-radius: 5px; /* Slightly rounder corners */
             transition: all 0.3s ease;
-            font-weight: 600;
+            font-weight: 700; /* Made it bolder */
             text-transform: uppercase;
             letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
         }
-
+        
         .btn:hover {
             background-color: var(--white);
             color: var(--primary-color);
+            transform: translateY(-3px); /* Slight lift effect */
         }
-
+        
         main {
             padding: 80px 0;
         }
-
+        
         section {
             margin-bottom: 80px;
         }
-
+        
+        
+        main {
+            padding: 80px 0;
+        }
+        
+        section {
+            margin-bottom: 80px;
+        }
+        
+        
         h2 { .hero {
             background: linear-gradient(rgba(12, 35, 64, 0.8), rgba(12, 35, 64, 0.8)), url('/api/placeholder/1920/1080');
             background-size: cover;
@@ -272,13 +288,13 @@
         }
 
         .hero-content h2 {
-            font-size: 3.5em;
+            font-size: 6.5em;
             margin-bottom: 20px;
             font-weight: 300;
         }
 
         .hero-content p {
-            font-size: 1.2em;
+            font-size: 5em;
             max-width: 600px;
             margin: 0 auto 30px;
             font-weight: 300;
