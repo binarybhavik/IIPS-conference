@@ -559,14 +559,16 @@
  /* advisory committee cards */
 
 
- .advisory-card-wrapper, .Organizing-card-wrapper {
+ .advisory-card-wrapper,
+ .Organizing-card-wrapper {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
      gap: 20px;
      padding: 20px;
  }
 
- .advisory-card-wrapper p, .Organizing-card-wrapper p{
+ .advisory-card-wrapper p,
+ .Organizing-card-wrapper p {
      background-color: #0C2340;
      color: #fff;
      padding: 20px;
@@ -585,4 +587,13 @@
  .advisory-card-wrapper p strong {
      font-weight: bold;
      display: block;
+ }
+
+ .advisory-card {
+     transition: all 0.3s ease;
+ }
+
+ .advisory-card:hover {
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+     transform: scale(1.05);
  }
